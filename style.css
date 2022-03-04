@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato,'Open Sans', sans-serif;
+}
+
+.conversor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+.fundo{
+    width: 100%;
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: #6645b9 2px 2px, #4158D0 4px 4px;
+}
+
+.conversor-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.conversor-content input{
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 24px;
+    margin: 10px;
+    border: 3px solid #6645b9;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder{
+    color: #6645b9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.conversor-content input:focus{
+    outline: white;
+}
+
+.conversor-content button{
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 10px auto;
+    background-color: #4158D0;
+    border: 3px solid #C850C0;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+button:hover{
+    background-color: #6645b9;
+    border: 3px solid transparent;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.icons i{
+    margin: 5px;
+    color: white;
+}
+
+.icons i:hover{
+    color: #6645b9;
+}
+
+/* --------------------------------------*/
+
+.conversor-div{
+    display: none;
+    background-color: rgba(191, 165, 255, .1);
+    margin: auto;
+    padding: 0 20px;
+    justify-content: center;
+    color: #d6caf7;
+    font-size: 24px;
+    border-radius: 18px;
+}
+
+.conversor-div div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+.conversor-div h3{
+    margin: 0;
+}
+
+.conversor-div small{
+    text-align: center;
+}
+
+
+.erro{
+    display: block;
+    background-color: rgba(191, 165, 255, .1);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 18px;
+    color: #f4f0ff;
+    font-size: 20px;
+}
